@@ -1,0 +1,180 @@
+*{
+  box-sizing: border-box;
+}
+
+.cardStyle {
+  margin: 10px auto;
+  width: 90%;
+  background-color: #f9f9f9;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  border-radius: 20px;
+  text-align: left;
+  margin-top: 20px;
+}
+
+
+.buttonStyle {
+  background-color: #ff5050;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 20px;
+  cursor: pointer;
+  align-self: flex-end;
+  margin-top: 10px;
+}
+
+.buttonStyle:hover {
+  background-color: rgb(250, 45, 45);
+}
+
+body, h1, h2, p, ul, li {
+  margin: 0;
+  padding: 0;
+}
+
+.head {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgba(47,86,135,1);
+  padding: 20px;
+}
+
+h1 {
+  font-size: 36px;
+  color: #fff;
+ 
+
+}
+
+.sort {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 20px 0;
+
+}
+
+div{
+  margin: 10px auto;
+}
+
+input[type="text"], select {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+  outline: none;
+  margin: 5px;
+  background-color: #fff;
+  color: #333;
+  width: 300px;
+}
+
+p {
+  display: block;
+  padding: 10px;
+ 
+}
+
+.cardStyle:hover p {
+  display: block;
+}
+
+.pagination {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+  padding: 0;
+}
+
+.pagination li {
+  margin: 0 5px;
+  display: inline;
+}
+
+.pagination button {
+  font-weight: bold;
+  padding: 7px 12px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+  background-color: transparent;
+}
+
+.pagination .selected {
+  background-color: red;
+  color: white;
+  cursor: default;
+}
+
+.pagination .unselected {
+  background-color: black;
+  color: white;
+  cursor: default;
+}
+
+.data-filter {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  background-color: #f0f0f0;
+  border-radius: 20px;
+  margin-top: 50px;
+}
+
+.data-filter input {
+  flex: 1;
+  border: none;
+  background: none;
+  outline: none;
+  font-size: 16px;
+}
+
+.data-filter i {
+  margin-left: 10px;
+  color: #333;
+  font-size: 20px;
+}
+
+.iconStyle {
+  padding: 15px;
+}
+
+@media (max-width: 768px) {
+  div > div {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.data-sort {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  background-color: #f0f0f0;
+  padding: 10px;
+  border-radius: 20px;
+  margin-top: 20px;
+}
+
+.data-sort select {
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+}
+
+@media (max-width: 768px) {
+  .data-sort {
+    flex-direction: column;
+  }
+
+  .data-sort label {
+    margin-bottom: 10px;
+  }
+}
